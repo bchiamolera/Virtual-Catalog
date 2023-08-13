@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR" class="bg-light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS for this template -->    
+    <script defer src="./main.js"></script>
+
+    <title>Virtual Catalog</title>
+    <link rel="icon" type="image/x-icon" href="./img/shopping-cart.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/shopping-cart.png" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top ms-2 me-3">
+                    Virtual Catalog
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container my-5 min-vh-100">
+            <section class="mb-4">
+                <h2 class="text-center fs-2 mb-3">Products</h2>
+                <div class="filter container d-flex justify-content-center">
+                    <div class="btn-toolbar flex-wrap justify-content-center gap-2" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" data-category="all" checked>
+                        <label class="btn btn-outline-dark" for="btnradio1">All</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-category="men's clothing">
+                        <label class="btn btn-outline-dark" for="btnradio2">Men's Clothing</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" data-category="jewelery">
+                        <label class="btn btn-outline-dark" for="btnradio3">Jewelery</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" data-category="electronics">
+                        <label class="btn btn-outline-dark" for="btnradio4">Electronics</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" data-category="women's clothing">
+                        <label class="btn btn-outline-dark" for="btnradio5">Women's Clothing</label>
+                      </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row row-cols-1 row-cols-md-4 g-4" id="products-catalog">
+    
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="bd-footer bg-dark text-center text-white py-3">
+        <div class="text-center p-3">
+            © 2023 Copyright: Virtual Catalog
+        </div>
+    </footer>
+</body>
+
+</html>
